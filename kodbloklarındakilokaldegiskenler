@@ -1,0 +1,22 @@
+
+package kodbloklarındakilokaldegiskenler;
+
+
+public class KodBloklarındakiLokalDegiskenler {
+
+    public static void main(String[] args) {
+        //Her süslü parantez bloğu içindeki değişken yalnız aynı blokta kullanılabilir.
+        
+        int a=4;
+        String yazdir="Merhaba";
+        
+        if (a<5) {
+            
+            //Burada tanımlayacağımız bir değişken ancak if içinde kullanılır.
+            System.out.println(yazdir);
+        }
+        
+        
+    }
+    
+}
