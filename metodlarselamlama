@@ -1,0 +1,18 @@
+
+package metodlarselamlama;
+
+public class MetodlarSelamlama {
+    
+    public static void Selamlama (String isim,String soyisim) {
+        
+        System.out.println("Selamlar "+isim+" "+soyisim);
+        
+    }
+
+    public static void main(String[] args) {
+        
+        Selamlama("Emre","YILDIZ");
+        
+    }
+    
+}
