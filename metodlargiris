@@ -1,0 +1,32 @@
+
+package metodlargiris;
+
+import java.util.Scanner;
+
+
+public class MetodlarGiris {
+    
+    public static void faktoriyel(){
+        Scanner scanner= new Scanner(System.in);
+        long fakt=1;
+        System.out.println("Faktoriyel hesaplaması için bir sayı giriniz");
+        long sayi=scanner.nextLong();
+        
+        while (sayi>0) {            
+            fakt*=sayi;
+            sayi--;
+        }
+        System.out.println("faktoriyel = "+fakt);
+    
+        
+    }
+
+    public static void main(String[] args) {
+           faktoriyel();
+        
+        }
+        
+        
+    }
+    
+
