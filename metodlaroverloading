@@ -1,0 +1,23 @@
+
+package metodlaroverloading;
+
+
+public class MetodlarOverloading {
+
+    //Overloading aynı metodu farklı sayıda değişkenle kullanımı amaçlar
+    
+    public static int toplama(int a,int b) {
+        // 2 değer ile aynı fonksyonu çalıştırma
+        return (a+b);
+    }
+    public static int toplama(int a,int b,int c) {
+        // 3 değer ile aynı fonksyonu çalıştırma
+        return (a+b+c);
+    }
+    
+    public static void main(String[] args) {
+        System.out.println(toplama(1, 2, 3));
+        System.out.println(toplama(1, 2));
+    }
+    
+}
