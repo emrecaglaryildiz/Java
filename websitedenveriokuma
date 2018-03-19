@@ -1,0 +1,26 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package websitedenveriokuma;
+
+import java.net.*;
+import java.io.*;
+
+public class WebSitedenVeriOkuma {
+
+    public static void main(String[] args) throws IOException {
+    
+       URL oracle = new URL("http://mynet.com");
+       URLConnection yc = oracle.openConnection();
+       BufferedReader in = new BufferedReader(new InputStreamReader(yc.getInputStream()));
+       String inputLine;
+        while ((inputLine = in.readLine()) != null) 
+            System.out.println(inputLine);
+            in.close();
+        
+        
+    }
+    
+}
