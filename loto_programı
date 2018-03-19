@@ -1,0 +1,25 @@
+
+package loto_programı;
+
+import java.util.Random;
+
+public class Loto_programı {
+
+    public static void main(String[] args) {
+        Random r=new Random(); //random sınıfı
+        int x=0;
+        while (x<11) {
+            int a=r.nextInt(55);
+            int b=r.nextInt(55);
+            int c=r.nextInt(55);
+            int d=r.nextInt(55);
+            int e=r.nextInt(55);
+            int f=r.nextInt(55);
+            System.out.println(a+" "+b+" "+c+" "+d+" "+e+" "+f);
+            x++;
+        }
+        
+        
+    }
+    
+}
