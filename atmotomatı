@@ -1,0 +1,63 @@
+
+package atmotomatı;
+
+import java.util.Scanner;
+
+public class AtmOtomatı {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        int bakiye=1000;
+        
+        OUTER:
+        while (true) {
+            System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*");
+            System.out.println("Para Çekme (1) ");
+            System.out.println("Bakiye Görme (2) ");
+            System.out.println("Para Yatırma (3) ");
+            System.out.println("Çıkış q ");
+            System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*");
+            System.out.println("Yapmak istediğiniz işlemi seçiniz !");
+            String islem=sc.nextLine();
+            switch (islem) {
+                case "q":
+                    System.out.println("Sistemden çıkılıyor");
+                    break OUTER;
+                case "1":
+                    System.out.println("Çekmek istediğiniz tutar : ");
+                    int cekim=sc.nextInt();
+                    sc.nextLine();
+                    if (bakiye-cekim<0) {
+                        System.out.println("Bakiye yetersiz ! "+bakiye);
+                    } else {
+                        bakiye=bakiye-cekim;
+                        System.out.println("Çekilen tutar : "+cekim);
+                        System.out.println("Kalan bakiye : "+ bakiye);
+                        break OUTER;
+                    }
+                    break;
+                case "2":
+                    System.out.println("Bakiyeniz :"+bakiye);
+                    break;
+                case "3":
+                    System.out.println("Yatırmak istediğiniz tutarı giriniz :");
+                    int yatan=sc.nextInt();
+                    sc.nextLine();
+                    bakiye=bakiye+yatan;
+                    System.out.println("Yatan tutar : "+yatan);
+                    System.out.println("Yeni bakiye : "+ bakiye);
+                    break;
+                default:
+                    System.out.println("Geçersiz işlem");
+                    break;
+            }
+        }
+        
+        
+    }
+        
+        
+        
+    }
+    
+
