@@ -1,0 +1,21 @@
+
+package do_while_örnek;
+
+
+public class Do_while_örnek {
+
+    public static void main(String[] args) {
+        
+        int i=1;
+        
+        do {
+            
+            System.out.println("ilk satırda do yazar"+i);
+            i++;
+        } while (i<5);
+        
+        
+        
+    }
+    
+}
