@@ -1,0 +1,27 @@
+
+package sayının_rakamları_toplamı_bulma;
+
+import java.util.Scanner;
+
+public class Sayının_rakamları_toplamı_bulma {
+
+    public static void main(String[] args) {
+        
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("4 basamaklı bir sayı giriniz ");
+        int sayi=scanner.nextInt();
+        int toplam=0;
+        
+        do {            
+            
+        toplam+=sayi%10;
+        sayi/=10;
+        
+            
+        } while (sayi>0);
+        System.out.println("rakamlar toplamı = "+toplam);
+       
+        
+    }
+    
+}
